@@ -1,0 +1,130 @@
+from __future__ import annotations
+
+from typing import Dict
+
+
+SUPPORTED_LANGS = ["en", "tr", "de", "es", "fr", "it", "ru"]
+
+
+_STRINGS: Dict[str, Dict[str, str]] = {
+    "en": {
+        "app_name": "Sentinel",
+        "scanning": "Scanning logs...",
+        "found_files": "Found files: {n}",
+        "report": "=== Report ===",
+        "findings": "Findings: {n}",
+        "no_findings": "No findings.",
+        "rule_bruteforce": "[BRUTEFORCE] Possible brute-force (many FAILED LOGIN from same IP)",
+        "rule_admin_hits": "[ADMIN_HITS] Admin path hits detected",
+        "threshold": "threshold: {n}",
+        "ip_counts": "ip_counts: {m}",
+        "err_path": "Path not found: {p}",
+        "err_no_logs": "No readable log files found in: {p}",
+        "choose_lang": "Choose language ({langs}) [default: {d}]: ",
+        "saved_lang": "Saved language: {selected}",
+    },
+    "tr": {
+        "app_name": "Sentinel",
+        "scanning": "Loglar taranıyor...",
+        "found_files": "Bulunan dosya: {n}",
+        "report": "=== Rapor ===",
+        "findings": "Bulgular: {n}",
+        "no_findings": "Bulgu yok.",
+        "rule_bruteforce": "[BRUTEFORCE] Olası brute-force (aynı IP'den çok FAILED LOGIN)",
+        "rule_admin_hits": "[ADMIN_HITS] Admin path hit tespit edildi",
+        "threshold": "eşik: {n}",
+        "ip_counts": "ip_sayacı: {m}",
+        "err_path": "Yol bulunamadı: {p}",
+        "err_no_logs": "Şu klasörde okunabilir log yok: {p}",
+        "choose_lang": "Dil seç ({langs}) [varsayılan: {d}]: ",
+        "saved_lang": "Kaydedilen dil: {selected}",
+    },
+    "de": {
+        "app_name": "Sentinel",
+        "scanning": "Logs werden gescannt...",
+        "found_files": "Gefundene Dateien: {n}",
+        "report": "=== Bericht ===",
+        "findings": "Befunde: {n}",
+        "no_findings": "Keine Befunde.",
+        "rule_bruteforce": "[BRUTEFORCE] Möglicher Brute-Force (viele FAILED LOGIN von derselben IP)",
+        "rule_admin_hits": "[ADMIN_HITS] Admin-Pfad Zugriffe erkannt",
+        "threshold": "Schwelle: {n}",
+        "ip_counts": "ip_counts: {m}",
+        "err_path": "Pfad nicht gefunden: {p}",
+        "err_no_logs": "Keine lesbaren Logs in: {p}",
+        "choose_lang": "Sprache wählen ({langs}) [Standard: {d}]: ",
+        "saved_lang": "Gespeicherte Sprache: {selected}",
+    },
+    "es": {
+        "app_name": "Sentinel",
+        "scanning": "Escaneando logs...",
+        "found_files": "Archivos encontrados: {n}",
+        "report": "=== Informe ===",
+        "findings": "Hallazgos: {n}",
+        "no_findings": "Sin hallazgos.",
+        "rule_bruteforce": "[BRUTEFORCE] Posible fuerza bruta (muchos FAILED LOGIN desde la misma IP)",
+        "rule_admin_hits": "[ADMIN_HITS] Accesos a ruta admin detectados",
+        "threshold": "umbral: {n}",
+        "ip_counts": "ip_counts: {m}",
+        "err_path": "Ruta no encontrada: {p}",
+        "err_no_logs": "No hay logs legibles en: {p}",
+        "choose_lang": "Elige idioma ({langs}) [por defecto: {d}]: ",
+        "saved_lang": "Idioma guardado: {selected}",
+    },
+    "fr": {
+        "app_name": "Sentinel",
+        "scanning": "Analyse des logs...",
+        "found_files": "Fichiers trouvés : {n}",
+        "report": "=== Rapport ===",
+        "findings": "Résultats : {n}",
+        "no_findings": "Aucun résultat.",
+        "rule_bruteforce": "[BRUTEFORCE] Brute-force possible (beaucoup de FAILED LOGIN depuis la même IP)",
+        "rule_admin_hits": "[ADMIN_HITS] Accès au chemin admin détectés",
+        "threshold": "seuil : {n}",
+        "ip_counts": "ip_counts: {m}",
+        "err_path": "Chemin introuvable : {p}",
+        "err_no_logs": "Aucun log lisible dans : {p}",
+        "choose_lang": "Choisir la langue ({langs}) [défaut : {d}]: ",
+        "saved_lang": "Langue enregistrée : {selected}",
+    },
+    "it": {
+        "app_name": "Sentinel",
+        "scanning": "Scansione log...",
+        "found_files": "File trovati: {n}",
+        "report": "=== Report ===",
+        "findings": "Risultati: {n}",
+        "no_findings": "Nessun risultato.",
+        "rule_bruteforce": "[BRUTEFORCE] Possibile brute-force (molti FAILED LOGIN dallo stesso IP)",
+        "rule_admin_hits": "[ADMIN_HITS] Accessi a percorso admin rilevati",
+        "threshold": "soglia: {n}",
+        "ip_counts": "ip_counts: {m}",
+        "err_path": "Percorso non trovato: {p}",
+        "err_no_logs": "Nessun log leggibile in: {p}",
+        "choose_lang": "Scegli lingua ({langs}) [predefinito: {d}]: ",
+        "saved_lang": "Lingua salvata: {selected}",
+    },
+    "ru": {
+        "app_name": "Sentinel",
+        "scanning": "Сканирование логов...",
+        "found_files": "Найдено файлов: {n}",
+        "report": "=== Отчёт ===",
+        "findings": "Найдено: {n}",
+        "no_findings": "Ничего не найдено.",
+        "rule_bruteforce": "[BRUTEFORCE] Возможен brute-force (много FAILED LOGIN с одного IP)",
+        "rule_admin_hits": "[ADMIN_HITS] Обнаружены обращения к admin пути",
+        "threshold": "порог: {n}",
+        "ip_counts": "ip_counts: {m}",
+        "err_path": "Путь не найден: {p}",
+        "err_no_logs": "Нет читаемых логов в: {p}",
+        "choose_lang": "Выберите язык ({langs}) [по умолчанию: {d}]: ",
+        "saved_lang": "Сохранён язык: {selected}",
+    },
+}
+
+
+def t(lang: str, key: str, **kwargs) -> str:
+    lang = (lang or "en").lower()
+    if lang not in _STRINGS:
+        lang = "en"
+    s = _STRINGS[lang].get(key) or _STRINGS["en"].get(key) or key
+    return s.format(**kwargs)
