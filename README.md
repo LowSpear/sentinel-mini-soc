@@ -1,7 +1,3 @@
-\# Sentinel
-
-
-
 A lightweight, cross-platform log scanner that detects suspicious patterns using simple rules.
 
 \- Multi-language (first run asks language and remembers it via config.json)
@@ -33,4 +29,5 @@ Export JSON:
 
 
 python -m sentinel.cli --path sample\_logs --json report.json
+
 
