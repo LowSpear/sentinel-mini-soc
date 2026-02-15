@@ -15,19 +15,24 @@ A lightweight, cross-platform log scanner that detects suspicious patterns using
 python -m sentinel.cli
 
 
-
-Scan a folder:
-
-
-
-python -m sentinel.cli --path sample\_logs
-
-
-
 Export JSON:
 
 
+BASIC COMMANDS:
 
 python -m sentinel.cli --path sample\_logs --json report.json
 
+python -m sentinel.cli --path sample_logs
+
+
+If you want to set the language:
+
+
+python -m sentinel.cli --path sample_logs --set-lang
+
+
+If you want to change the threshold:
+
+
+python -m sentinel.cli --path sample_logs --bf 7 --admin 4
 
