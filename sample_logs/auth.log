@@ -1,0 +1,7 @@
+sample_logs/auth.log
+
+[20:12:03] FAILED LOGIN - user: admin - ip: 192.168.1.5
+[20:12:04] FAILED LOGIN - user: admin - ip: 192.168.1.5
+[20:12:05] FAILED LOGIN - user: admin - ip: 192.168.1.5
+[20:12:06] FAILED LOGIN - user: admin - ip: 192.168.1.5
+[20:12:07] FAILED LOGIN - user: admin - ip: 192.168.1.5
