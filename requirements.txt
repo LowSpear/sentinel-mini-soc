@@ -1,0 +1,11 @@
+# sentinel uses only Python standard library
+
+.gitignore
+
+__pycache__/
+*.pyc
+.env
+venv/
+.venv/
+config.json
+report.json
