@@ -16,11 +16,9 @@ python -m sentinel.cli
 
 
 Export JSON:
-
+python -m sentinel.cli --path sample\_logs --json report.json
 
 BASIC COMMANDS:
-
-python -m sentinel.cli --path sample\_logs --json report.json
 
 python -m sentinel.cli --path sample_logs
 
@@ -35,4 +33,5 @@ If you want to change the threshold:
 
 
 python -m sentinel.cli --path sample_logs --bf 7 --admin 4
+
 
